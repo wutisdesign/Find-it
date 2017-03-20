@@ -2,37 +2,50 @@
 <html>
   <head>
     <title>Find It</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:300" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       
       <header>Find It</header>
-      <p>Do you see any animals?  They’re so well camouflaged you might not see them at first. Look carefully and select the three hidden animals in each picture.</p>  
+      <p>Do you see any animals? select the three hidden animals in each picture.</p>  
       
       <div class="image-container">
-        <img class="oceanfloor1" src="images/ocean_floor_01.jpg">
-        <img class="oceanfloor2" src="images/ocean_floor_02.jpg">
-        <img class="oceanfloor3" src="images/ocean_floor_03.jpg">
-      </div>
-      <div class="image-container2">
-        <img class="oceanfloor4" src="images/ocean_floor_04.jpg">
-        <img class="oceanfloor4" src="images/ocean_floor_05.jpg">
-        <img class="oceanfloor4" src="images/ocean_floor_06.jpg">
-        <img class="oceanfloor4" src="images/ocean_floor_07.jpg">
-      </div>
-        <img class="oceanfloor4" src="images/ocean_floor_08.png">
+        
+        <div id="leafyseadragon">
+          <img src="images/leafyseadragon_bg.png">
+        </div>
 
+        <div id="eel">
+          <img src="images/eel_bg.png">
+        </div>
+        
+        <div id="octopus">
+          <img src="images/octopus_bg.png">
+        </div>
+        
+        <div class="oceanfloor">
+          <img src="images/oceanfloor.png">
+        </div>
+      
       </div>
 
-    <div class="bottom-row">
-      <div class="image-bank">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
+        
+      <div class="bottom-row">
+        <div class="image-bank">
+          <div id="item1"><img src="images/eel.png"></div>
+          <div id="item2"><img src="images/leafyseadragon.png"></div>
+          <div id="item3"><img src="images/octopus.png"></div>
+        </div>
+        <div id="next"><a href="forest.html" target="_self">Next</a></div>
+  
       </div>
-      <a href="forest.html" target="_self">Next</a>
+      
     </div>
+    
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
